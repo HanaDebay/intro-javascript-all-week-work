@@ -57,6 +57,7 @@
 
 
 //fixed repetation
+//if we know the exact time we loop we use for loop
 let listOfProduct =["Sofa","Bed","Dining Table","Chair","Drawer"];
 for(let i = 0; i < listOfProduct.length; i++){
     console.log(`Item ${ i + 1}: ${listOfProduct[i]}`);

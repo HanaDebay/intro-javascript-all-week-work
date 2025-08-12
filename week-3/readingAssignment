@@ -117,3 +117,5 @@ Example: show/hide content, change colors when hovering, etc.
 
 ********The DOM is what makes a static HTML page come alive.
 It’s the programming interface that lets JavaScript interact with HTML and CSS to create dynamic, interactive, user-friendly websites.********
+
+![alt text](html_dom.jpg)
