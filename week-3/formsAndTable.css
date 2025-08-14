@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(135deg, #e7eb10ff, #416dafff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* Overall form container */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Help text */
+form .form-text {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Checkbox */
+form .form-check-input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+form .form-check-label {
+  margin-left: 5px;
+}
+
+/* Button */
+form .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  
+}
+
+form .btn-primary:hover {
+  background-color: #0056b3;
+}
+.tableSection {
+  margin-top: 100%; 
+}
