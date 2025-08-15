@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="table.css">
+    <title>Student Report</title>
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <h2 class="text-center text-primary mb-4">Student Report Generator</h2>
+
+        <!-- Form -->
+        <form id="dataForm" class="row g-3 mb-4">
+            <div class="col-md-3">
+                <input type="text" id="name" class="form-control" placeholder="Student Name" required>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="roll" class="form-control" placeholder="Roll Number" required>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="class" class="form-control" placeholder="Class" required>
+            </div>
+            <div class="col-md-2">
+                <input type="number" id="marks" class="form-control" placeholder="Marks" required>
+            </div>
+            <div class="col-md-3 d-grid">
+                <button type="submit" class="btn btn-success">Add Student</button>
+            </div>
+        </form>
+
+        <!--table-->
+        <div class="table-responsive shadow-sm">
+            <table id="myTable" class="table table-striped table-hover table-bordered align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <!--Button-->
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button id="excelBtn" class="btn btn-primary">Download Excel</button>
+            <button id="pdfBtn" class="btn btn-danger">Download PDF</button>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="table.js"></script>
+</body>
+
+</html>

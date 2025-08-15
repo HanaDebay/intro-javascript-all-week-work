@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(135deg, #36aa13ff, #eeea15ff, #e70909ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} 
+
+h2 {
+    font-weight: bold;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
